@@ -1,7 +1,7 @@
 <template>
     <div id="interview-nav">
-        <router-link to="/interview" class="interview-nav-item" 
-            v-for="navItem of navbar" 
+        <router-link to="/interview" class="interview-nav-item"
+            v-for="navItem of navbar"
             :key="navItem.id"
             v-bind:class="{active: navItem.active}"
         >
@@ -25,6 +25,7 @@ export default {
     }
 }
 </script>
+
 <style scoped>
     #interview-nav {
         width: 100%;
